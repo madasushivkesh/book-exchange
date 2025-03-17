@@ -1,0 +1,25 @@
+### To retrieve a list of all books:
+
+GET http://localhost:4000/api/v1/books
+cookie: jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY3ZDc4NDIxZWRjMDQ3M2U1MDU4MWIyNCIsImlhdCI6MTc0MjE3NzMxNCwiZXhwIjoxNzQzMDQxMzE0fQ.S-zND-L73i1lsfxQuoH4Aoiudw5QFpc6EFJ6V5ClDq8
+
+
+### To get a book with a specific ID:
+
+GET http://localhost:4000/api/v1/books/67d78eb8acb9408df4fa74a8
+cookie: jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY3ZDc4NDIxZWRjMDQ3M2U1MDU4MWIyNCIsImlhdCI6MTc0MjE3NzMxNCwiZXhwIjoxNzQzMDQxMzE0fQ.S-zND-L73i1lsfxQuoH4Aoiudw5QFpc6EFJ6V5ClDq8
+
+
+### To create a new book:
+
+POST http://localhost:4000/api/v1/books
+content-type: application/json
+cookie: jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY3ZDc4NDIxZWRjMDQ3M2U1MDU4MWIyNCIsImlhdCI6MTc0MjE3NzMxNCwiZXhwIjoxNzQzMDQxMzE0fQ.S-zND-L73i1lsfxQuoH4Aoiudw5QFpc6EFJ6V5ClDq8
+
+{ 
+  "title": "Harry Potter and the Sorcerer's Stone",
+  "author": "J.K. Rowling",
+  "description": "It is fantasy book",
+  "genre": "Fantasy",
+  "year": 1997
+}0
