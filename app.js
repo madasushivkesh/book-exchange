@@ -61,4 +61,8 @@ app.use(`${process.env.API_VERSION}/users`, userRouter);
 const booksRoutes = require('./routes/bookRoutes.js');
 app.use(`${process.env.API_VERSION}/books`, booksRoutes);
 
+// Use the logger middleware
+const loggerMiddleware = require('./loggerMiddleware');
+app.use(loggerMiddleware);
+
 module.exports = app;
